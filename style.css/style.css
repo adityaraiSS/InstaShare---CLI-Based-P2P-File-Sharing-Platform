@@ -1,0 +1,49 @@
+/* styles.css */
+
+.item {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Move the item up slightly on hover */
+}
+
+.item .hover-effect {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.item header {
+    position: absolute;
+    top: 100%; /* Position the header just below the image */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* More white background */
+    color: #fff; /* White color for the text */
+    padding: 10px;
+    opacity: 0; /* Hide the header by default */
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+}
+
+.item:hover header {
+    opacity: 1; /* Show the header on hover */
+}
+
+
+
+.menu {
+   
+    opacity: 0;
+    pointer-events: none;
+    /* ... */
+}
+
+.menu.active {
+    
+    opacity: 1;
+    pointer-events: auto;
+    /* ... */
+}
+
+
