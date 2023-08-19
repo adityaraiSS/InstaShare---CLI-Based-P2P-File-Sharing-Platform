@@ -5,203 +5,332 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>adityarai portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="style.css\style.css">
-		<meta charset="utf-8" />
-    
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
+<head>
+	<title>aditya.rai portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="style.css\style.css">
+	<meta charset="utf-8" />
+	<style>
+		/* Add your CSS styling here */
+		#skills {
+			padding: 50px 0;
+			background-color: #f4f4f4;
+		}
 
-				<div class="top">
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/DS.jpg" alt="" /></span>
-							<h1 id="title">Aditya Rai</h1>
-							<p>Data Scientist</p>
-						</div>
+		.skills-icons {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+		.skill {
+			text-align: center;
+			width: calc(25% - 20px);
+			margin-bottom: 20px;
+			transition: transform 0.3s;
+		}
 
-				</div>
+		.skill:hover {
+			transform: scale(1.1);
+		}
 
-				<div class="bottom">
+		.skill img {
+			max-width: 80px;
+		}
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/aditya-rai-ab8325253/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/adityaraiSS" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.hackerrank.com/bcs_2021008" class="icon brands fa-hackerrank"><span class="label">HackerRank</span></a></li>
-                            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+		.skill p {
+			margin-top: 10px;
+			font-weight: bold;
+		}
 
-						</ul>
+		.icons {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			/* Center-align the icons */
+		}
 
-				</div>
+		.icons li a {
+			font-size: 24px;
+			/* Adjust this value to change the icon size */
+			color: #333;
+			/* Adjust the color as needed */
+		}
 
+		#title {
+			font-size: 72px;
+			/* You can adjust this value to increase or decrease the font size */
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<!-- <span class="image avatar48"><img src="images/data-scientist_4240994.png" alt="" /></span> -->
+				<h1 id="title">Aditya Rai</h1>
+				<p>Data Scientist</p>
 			</div>
 
-		<!-- Main -->
-			<div id="main">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<ul class="nav">
+						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+						</li>
+						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+						<li><a href="#skills" id="skills-link"><span class="icon solid fa-code">Skills</span></a></li>
+						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
+						</li>
+					</ul>
 
-				<!-- Intro -->
-				<section id="top" class="one dark cover" style="background-image: url('images/25550.jpg'); background-size: cover; background-position: center;">
-					<div class="container">
-						<header>
-							<h2 class="alt">Hi! I'm <strong>Aditya</strong>, an enthusiastic and dedicated individual with a strong passion for Data Science and its transformative potential.</h2>
-							<p>Machine Learning, Deep Learning, NLP<br />Data Visualization-Tableau, Data Exploration</p>
-						</header>
-						<footer>
-							<a href="#portfolio" class="button scrolly">PROJECT PORTFOLIO</a>
-						</footer>
-					</div>
-				</section>
-				
-				
+				</ul>
+			</nav>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+		</div>
 
+		<div class="bottom">
+
+			<!-- Social Icons -->
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/aditya-rai-ab8325253/" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/adityaraiSS" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://www.hackerrank.com/bcs_2021008" class="icon brands fa-hackerrank"><span
+							class="label">HackerRank</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover"
+			style="background-image: url('images/25550.jpg'); background-size: cover; background-position: center;">
+			<div class="container">
+				<header>
+					<h2 class="alt">Hi! I'm <strong>Aditya</strong>, an enthusiastic and dedicated individual with a
+						strong passion for Data Science and its transformative potential.</h2>
+					<p>Machine Learning, Deep Learning, NLP<br />Data Visualization-Tableau, Data Exploration</p>
+				</header>
+				<footer>
+					<a href="#portfolio" class="button scrolly">PROJECT PORTFOLIO</a>
+				</footer>
+			</div>
+		</section>
+
+
+
+		<!-- Portfolio -->
+		<section id="portfolio" class="two">
+			<div class="container">
+
+				<header>
+					<h2>PROJECTS</h2>
+				</header>
+
+				<p>Within these pages, you will find links to a collection of short yet impactful projects that
+					encompass a wide spectrum of topics and techniques. Each project presented here is a testament to my
+					dedication, creativity, and willingness to explore the vast landscape of data science. As you
+					explore my portfolio, I hope these projects offer you a glimpse into my capabilities, and how I
+					harness the power of data to unveil insights and drive solutions.</p>
+
+				<div class="row">
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://github.com/adityaraiSS/COVID-SQL-Data-Exploration" class="image fit"><img
+									src="images\coronavirus-2.tmb-479v.jpg" alt="" /></a>
 							<header>
-								<h2>PROJECTS</h2>
+								<h3>Data Exploration using SQL</h3>
 							</header>
-
-							<p>Within these pages, you will find links to a collection of short yet impactful projects that encompass a wide spectrum of topics and techniques. Each project presented here is a testament to my dedication, creativity, and willingness to explore the vast landscape of data science. As you explore my portfolio, I hope these projects offer you a glimpse into my capabilities, and how I harness the power of data to unveil insights and drive solutions.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/adityaraiSS/COVID-SQL-Data-Exploration" class="image fit"><img src="images\coronavirus-2.tmb-479v.jpg" alt="" /></a>
-										<header>
-											<h3>Data Exploration using SQL</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/adityaraiSS/Market-Targeting-using-K-means-Clustering" class="image fit"><img src="images\kmeans_1.jpg" alt="" /></a>
-										<header>
-											<h3>Market Targeting using K-Means Clustering</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/adityaraiSS/Alzheimer-Disease-Stage-Prediction" class="image fit"><img src="images\alzheimer-human-brain-free-vector.jpg" alt="" /></a>
-										<header>
-											<h3>Alzheimer Disease Detection</h3>
-										</header>
-									</article>
-									<!-- <article class="item">
+						</article>
+						<article class="item">
+							<a href="https://github.com/adityaraiSS/Market-Targeting-using-K-means-Clustering"
+								class="image fit"><img src="images\kmeans_1.jpg" alt="" /></a>
+							<header>
+								<h3>Market Targeting using K-Means Clustering</h3>
+							</header>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://github.com/adityaraiSS/Alzheimer-Disease-Stage-Prediction"
+								class="image fit"><img src="images\alzheimer-human-brain-free-vector.jpg" alt="" /></a>
+							<header>
+								<h3>Alzheimer Disease Detection</h3>
+							</header>
+						</article>
+						<!-- <article class="item">
 										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 										<header>
 											<h3>Natoque Vitae</h3>
 										</header>
 									</article> -->
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit">
-											<img src="images/visualization.jpg" alt="" class="hover-effect" />
-										</a>
-										<header>
-											<h3>Data Visualization over COVID-19 using Tableau(IN PROGRESS)</h3>
-										</header>
-									</article>
-									<!-- <article class="item">
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="#" class="image fit">
+								<img src="images/visualization.jpg" alt="" class="hover-effect" />
+							</a>
+							<header>
+								<h3>Data Visualization over COVID-19 using Tableau(IN PROGRESS)</h3>
+							</header>
+						</article>
+						<!-- <article class="item">
 										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>Orci Convallis</h3>
 										</header>
 									</article> -->
-								</div>
-							</div>
+					</div>
+				</div>
 
-						</div>
-					</section>
+			</div>
+		</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+		<!-- About Me -->
+		<section id="about" class="three">
+			<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+				<header>
+					<h2>About Me</h2>
+				</header>
 
-							<!-- <a href="#" class="image featured"><img src="images/Screenshot 2023-08-18 200608.png" alt="" /></a> -->
+				<!-- <a href="#" class="image featured"><img src="images/Screenshot 2023-08-18 200608.png" alt="" /></a> -->
 
-							<p>Data Science Enthusiast and having deep knowledge in Data Analysis with expertise in Machine Learning and Deep Learning. Proficient in SQL and skilled in utilizing
-								powerful visualization tools like Tableau to present complex data in a clear and concise manner. Successfully developed
-								Convolutional Neural Network (CNN) based image classification project. Passionate about solving real-world challenges
-								through data-driven methodologies. Strong analytical and problem-solving skills combined with a keen eye for detail.
-								</p>
+				<p>Data Science Enthusiast and having deep knowledge in Data Analysis with expertise in Machine Learning
+					and Deep Learning. Proficient in SQL and skilled in utilizing
+					powerful visualization tools like Tableau to present complex data in a clear and concise manner.
+					Successfully developed
+					Convolutional Neural Network (CNN) based image classification project. Passionate about solving
+					real-world challenges
+					through data-driven methodologies. Strong analytical and problem-solving skills combined with a keen
+					eye for detail.
+				</p>
 
-						</div>
-					</section>
+			</div>
+		</section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+		<section id="skills" class="three">
+			<div class="container">
+				<header>
+					<h2>Skills</h2>
+				</header>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+				<div class="skills-icons">
+					<div class="skill">
+						<img src="images/sql-server.png" alt="SQL" />
+						<p>SQL</p>
+					</div>
+					<div class="skill">
+						<img src="images/dashboard.png" alt="Tableau" />
+						<p>Tableau</p>
+					</div>
+					<div class="skill">
+						<img src="images/python.png" alt="Python" />
+						<p>Python</p>
+					</div>
+					<div class="skill">
+						<img src="images/neural.png" alt="Neural Networks" />
+						<p>Neural Networks</p>
+					</div>
+					<div class="skill">
+						<img src="images/data-management.png" alt="DBMS" />
+						<p>DBMS</p>
+					</div>
+					<div class="skill">
+						<img src="images/xlsx_7817612.png" alt="MS Excel" />
+						<p>MS Excel</p>
+					</div>
+					<div class="skill">
+						<img src="images/coding.png" alt="Machine Learning" />
+						<p>Machine Learning</p>
+					</div>
+					<div class="skill">
+						<img src="images/work-progress_4827361.png" alt="Image Processing" />
+						<p>Image Processing</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-							<!-- <p>Elementum sem parturient nulla quam placerat viverra
+
+		<!-- Contact -->
+		<section id="contact" class="four">
+			<div class="container">
+
+				<header>
+					<h2>Contact</h2>
+				</header>
+
+				<!-- <p>Elementum sem parturient nulla quam placerat viverra
 							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
 							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
 							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p> -->
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
+				<form method="post" action="#">
+					<div class="row">
+						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+						<div class="col-12">
+							<textarea name="message" placeholder="Message"></textarea>
 						</div>
-					</section>
+						<div class="col-12">
+							<input type="submit" value="Send Message" />
+						</div>
+					</div>
+				</form>
 
 			</div>
+		</section>
 
-		<!-- Footer -->
-			<div id="footer">
+	</div>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+	<!-- Footer -->
+	<div id="footer">
 
-			</div>
+		<!-- Copyright -->
+		<!-- <ul class="copyright">
+			<li>&copy; Untitled. All rights reserved.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul> -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
